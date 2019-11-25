@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -18,4 +18,96 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<!-- 
+<div class="container-fluid">
+  <div class="row col-md-12">
+    <div>hello</div>
+    <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+    <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+    <div><i class="fa fa-trash" aria-hidden="true"></i></div>
+  </div>
+
+</div> -->
+<div style="border: 1px solid #dedfe8;
+margin-left: 19%;
+margin-right: 31%;">
+  <div style="height: 21rem;overflow: hidden;">
+    <div class="container" fxLayout fxLayout.xs="column" fxLayoutGap="5px" class="block" fxLayoutGap.xs="0">
+
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+      <div fxFlex="8%">
+        <mat-icon>crop_din</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>view_module</mat-icon>
+      </div>
+      <div fxFlex="8%" (click)="deleteList()">
+        <mat-icon>delete_outline</mat-icon>
+      </div>
+      <div fxFlex="8%" (click)="editList()">
+        <mat-icon>edit</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>lock</mat-icon>
+      </div>
+      <input type="text" placeholder="Search" (ngModelChange) = "search()" [(ngModel)] = "searchTerm" >
+
+      <div class="set" fxFlex="8%">
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </div>
+    </div>
+    <div class="container secondCon" fxLayout fxLayout.xs="column" fxLayoutGap.xs="0">
+
+
+
+
+      <div fxFlex="35%">
+        <ul>
+          <li class="list" (click)="clicked(item)" [class.active]="!item.isSelected"
+            *ngFor="let item of data"><b>{{item.title}}</b> <br /> {{item.content}} </li>
+        </ul>
+      </div>
+
+      <div fxFlex="60%">
+        <ng-container *ngIf="Item"><input type="text" [(ngModel)]='Item.title'></ng-container>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div style="border: 1px solid blue;
+margin-left: 19%;
+margin-right: 31%;">
+  <div class="container"  style="border: 1px solid #e8e6e4;padding: 7px;background-color: #dedfe8;" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+      <div fxFlex="8%">
+        <mat-icon>crop_din</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>view_module</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>delete_outline</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>edit</mat-icon>
+      </div>
+      <div fxFlex="8%">
+        <mat-icon>lock</mat-icon>
+      </div>
+      <input type="text" placeholder="Search">
+  
+  </div>
+
+  <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
+    <div class="item item-5" fxFlex="200px">Item 5</div>
+  </div>
+</div> -->

@@ -1,0 +1,97 @@
+.dot {
+    height: 15px;
+    width: 16px;
+    border-radius: 65%;
+    margin-top: 12px;
+    /* margin: 2px;
+    margin-top: 9px; */
+}
+.red {
+    background-color: red;
+    margin-left: 14px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+    margin-right: 23px !important;
+}
+mat-icon{
+    border: 1px solid #d8c8c8;
+    padding: 3px 11px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #a09999;
+    cursor: pointer;
+}
+
+.set mat-icon{
+    border :none;
+    background-color: #d6e2ec;
+}
+/* 
+::placeholder{
+color : #a09999;
+padding-left: 10%;
+} */
+
+
+.block input[type=text] {
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../searchicon.png');
+    background-position: 76px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 20px 10px 6.5rem;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+   
+    background-position: 76px 6px; 
+  }
+  
+  .block input[type=text]:focus {
+     background-image: url('../searchicon.png'), url('../error.png');
+     background-position: 5px 8px, 16.5rem 7px;
+     padding: 5px 22px 10px 30px;
+  }
+
+  .list {
+    border: 0.5px solid #eae3e3;
+    padding: 10px 12px 21px;
+    background-color: #f7f7f1c7;
+  }
+
+
+ .active{
+    background-color: #f1cd72c7 ;
+  }
+
+  ul  {
+    list-style-type: none;
+    margin : 0px !important;
+    padding: 0px !important;
+  }
+
+  .block{
+    border: 1px solid #e8e6e4;padding: 7px;background-color: #d6e2ec;
+  }
+
+
+  .secondCon ul{
+    overflow: auto;
+    height: 63%;
+  }
+ .secondCon input{
+    margin: 42px;
+    border: none;
+    width: 22rem;
+  }
+  .secondCon input:focus{
+    outline: none;
+  }
